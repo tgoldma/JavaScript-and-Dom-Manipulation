@@ -74,7 +74,52 @@ submit.on("click", function() {
 
   var filteredData = people.filter(person => person.datetime === inputValue);
 
-  console.log(filteredData);
+  //console.log(filteredData);
 
   d3.selectAll('tbody').remove(); // removes all 'tbody' elements from the DOM.
-}); 
+////////////////////////////////////////////////
+  // from data.js
+var tableData = filteredData;
+
+// YOUR CODE HERE!
+var table = d3.select("#ufo-table");
+
+//apend 
+
+var filteredData = people.filter(person => person.bloodType === inputValue);
+    //console.log(contentReport);
+    //var row = tbody.append("tr");
+    
+   // Object.entries(contentReport).forEach(function([key, value]) {
+      //console.log(key, value);
+ //     // Append a cell to the row for each value
+ //     // in the weather report object
+     //var cell = row.append("td");
+     //cell.text(value);
+   });
+
+
+
+///submit.on("click", function() {
+
+//console.log(data);
+///d3.event.preventDefault();
+/////////////////////////////////
+
+  // Select the input element and get the raw HTML node
+  //var inputElement = d3.select("#ufo-table");
+
+  // Get the value property of the input element
+  //var inputValue = inputElement.property("value");
+
+  //console.log(inputValue);
+  //console.log(people);
+
+  //var filteredData = people.filter(person => person.datetime === inputValue);
+
+  //console.log(filteredData);
+
+  });
+});
+
+  //<table id="ufo-table" class="table table-striped"></table>
